@@ -1,0 +1,52 @@
+.card {
+    /* border: 1px solid grey; */
+    margin: 10px;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 7px 21px 3px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out 0.1s;
+    flex: 1;
+}
+.card > h3{
+    text-align: center;
+}
+.card > p{
+    padding: 5px 15px;
+    text-align: center;
+    font-weight: lighter;
+}
+hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.card:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 9px 25px 7px;
+}
+
+.book-lists {
+    margin-left :20px;
+}
+
+.card-items{
+    display: flex;
+    justify-content: flex-start;
+    margin:20px;
+    flex-wrap: wrap;
+    flex:auto;
+}
+
+.ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

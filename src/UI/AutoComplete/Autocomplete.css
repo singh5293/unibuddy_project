@@ -1,0 +1,51 @@
+
+
+.Autocomplete{
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    width: 200px;
+  }
+
+  
+  .no-suggestions {
+    color: #999;
+    padding: 0.5rem;
+    display: block;
+  }
+  
+  .suggestions {
+    border: 1px solid #999;
+    background-color: lightgrey;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: calc(200px + 1rem);
+    position: absolute;
+    top:30px;
+    z-index: 3;
+  }
+  
+  .suggestions li {
+    padding: 0.5rem;
+  }
+  
+  .suggestion-active,
+  .suggestions li:hover {
+    background-color: #4C8FFB;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+  }
+
+  
